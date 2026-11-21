@@ -46,7 +46,7 @@ machines:
 
       # Machine work envelope (inches)
       dimensions:
-        x_max: 22.2
+        x_max: 18
         y_max: 30.3
         z_max: 3.3
 
@@ -70,7 +70,7 @@ machines:
     machining:
       # Z-axis reference system
       z_reference:
-        sacrifice_board_depth: 0.008    # How far to cut into sacrifice board (inches)
+        sacrifice_board_depth: 0.03128    # How far to cut into sacrifice board (inches)
         clearance_height: 0.5           # Clearance above material for rapid moves (inches)
 
       # Tab parameters (for perimeter operations)
@@ -105,7 +105,7 @@ machines:
     # Tube facing parameters (for aluminum tube operations)
     tube_facing:
       depth_margin: 0.005               # Extra depth beyond half tube height (inches)
-      max_roughing_depth: 0.3           # Maximum depth per roughing pass (inches)
+      max_roughing_depth: 0.0625          # Maximum depth per roughing pass (inches)
       max_finishing_depth: 0.51         # Maximum depth per finishing pass (inches)
 
       phase_1:
@@ -158,7 +158,7 @@ machines:
         ramp_start_clearance: 0.050
         stepover_percentage: 0.25
         helix_radius_multiplier: 0.5
-        max_slotting_depth: 0.2
+        max_slotting_depth: 0.0625
         peck_drill_depth: 0.05          # Peck depth for G83 drilling small holes (inches)
 
         tab_width: 0.25
@@ -179,7 +179,7 @@ machines:
         ramp_start_clearance: 0.100
         stepover_percentage: 0.55
         helix_radius_multiplier: 0.75
-        max_slotting_depth: 0.25
+        max_slotting_depth: 0.08
         peck_drill_depth: 0.05          # Peck depth for G83 drilling small holes (inches)
 
         tab_width: 0.25
